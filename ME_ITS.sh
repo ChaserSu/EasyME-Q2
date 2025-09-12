@@ -165,7 +165,7 @@ function show_menu() {
     clear
     echo "============================================="
     echo " QIIME2 16S/ITS 分析流程 - 交互式控制面板"
-    echo " 版本: 2025.6.22.1537 by 王飞龙 适用于双端rawData数据"
+    echo " 版本: 2025.6.22.1537 by ChaserSu 适用于双端rawData数据"
     echo " 已写入AMV4.5NF-AMDGR引物序列"
     echo "============================================="
     echo " 开始分析前检查文件是否齐全："
