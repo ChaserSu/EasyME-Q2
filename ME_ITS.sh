@@ -165,8 +165,9 @@ function show_menu() {
     clear
     echo "============================================="
     echo " QIIME2 16S/ITS 分析流程 - 交互式控制面板"
-    echo " 版本: 2025.6.22.1537 by ChaserSu 适用于双端rawData数据"
+    echo " 版本: 2025.11.08.1321 by ChaserSu 适用于双端rawData数据"
     echo " 已写入AMV4.5NF-AMDGR引物序列"
+    echo " https://github.com/ChaserSu/EasyME-Q2"
     echo "============================================="
     echo " 开始分析前检查文件是否齐全："
     echo " 1、测序文件如rawData等"
@@ -794,8 +795,8 @@ function classify_taxonomy() {
         return
     fi
     # 获取分类器文件
-    read -p "请输入分类器文件路径 [默认: unite_ver10_dynamic_s_all_19.02.2025-Q2-2024.10.qza]: " classifier
-    classifier=${classifier:-"unite_ver10_dynamic_s_all_19.02.2025-Q2-2024.10.qza"}
+    read -p "请输入分类器文件路径 [默认: /public/home/software/db/qiime2_database/unite_ver10_dynamic_s_all_19.02.2025-Q2-2024.10.qza]: " classifier
+    classifier=${classifier:-"/public/home/software/db/qiime2_database/unite_ver10_dynamic_s_all_19.02.2025-Q2-2024.10.qza"}
     if ! check_file "$classifier"; then
         echo "错误: 分类器文件不存在"
         return
@@ -989,11 +990,11 @@ EOF
     time eval "$biom_convert_cmd" \
         echo -e "\n准备执行的命令:\n$sed_cmd1\n$sed_cmd2\n$tr_cmd"
     echo "执行中..."
-    time eval "sed_cmd1" \
+    time eval "$sed_cmd1" \
         &>log/export_taxonomy.log
-    time eval "sed_cmd2" \
+    time eval "$sed_cmd2" \
         &>log/export_taxonomy.log
-    time eval "tr_cmd" \
+    time eval "$tr_cmd" \
         &>log/export_taxonomy.log
     step_commands+=("$sed_cmd1" "$sed_cmd2" "$tr_cmd")
     add_to_history "$sed_cmd1"
