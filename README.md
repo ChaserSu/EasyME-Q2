@@ -81,3 +81,11 @@ BiocManager::install(c("clusterProfiler", "org.Hs.eg.db", "ggplot2"))
 
 我们也在代码库中提供了一个示例回放文件供您查阅。我们的数据都是双端的，如果你需要单端的版本，请给我留言，我会为您修改。
 我们的功能都是模块化的，你也可以添加其他功能，例如将Qiime2官方的生成PCoA图的功能加入进来，相信我，当你可以这么做了的时候，你已经不必这么做了，就像已经学会走路的婴儿不再需要学步车，希望我们的小工具能够协助你走出Qiime2分析的第一步。
+
+# 加载界面（自动扫描）
+<img width="1214" height="1129" alt="image" src="https://github.com/user-attachments/assets/04cacf7d-8765-442f-8c9c-f330381e1e52" />
+
+# 操作界面
+<img width="761" height="598" alt="image" src="https://github.com/user-attachments/assets/51d66ee9-94c8-46e4-a94c-a44a9ffca56e" />
+
+
