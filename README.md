@@ -1,5 +1,6 @@
 # 附赠一个小工具，可以快捷切换R-Sever的后端R到当前Conda环境的R版本
 <img width="1071" height="799" alt="image" src="https://github.com/user-attachments/assets/f8c5eac3-6cfc-4884-a235-f04765f827c3" />
+
 # 切换到Conda环境的R后，请尽量使用Conda管理（尤其是下载）R的程序包，防止遇到潜在的冲突
 
 ```
