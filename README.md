@@ -1,6 +1,7 @@
 # 附赠一个小工具，可以快捷切换R-Sever的后端R到当前Conda环境的R版本
 <img width="1071" height="799" alt="image" src="https://github.com/user-attachments/assets/f8c5eac3-6cfc-4884-a235-f04765f827c3" />
 # 切换到Conda环境的R后，请尽量使用Conda管理（尤其是下载）R的程序包，防止遇到潜在的冲突```
+
 ```
 mamba/conda search r-包名  # 精确搜：r-ggplot2 | 模糊搜：r-gg*
 # 基础安装（多包空格分隔）
@@ -18,6 +19,7 @@ BiocManager::install(version = "3.18")
 # 多包批量安装（向量格式）
 BiocManager::install(c("clusterProfiler", "org.Hs.eg.db", "ggplot2"))
 ```
+
 # EasyME-Q2
 厌倦了在QIIME2的初始设置上就卡住吗？EasyME-Q2来帮你
 
